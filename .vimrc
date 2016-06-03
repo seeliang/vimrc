@@ -17,6 +17,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-haml'
 Plugin 'tomasr/molokai'
 Plugin 'bling/vim-airline'
+Plugin 'Yggdroot/indentLine'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
@@ -60,12 +61,10 @@ autocmd! bufwritepre * set expandtab | retab! 2
 " theme
 set background=dark
 let g:molokai_original = 1
-let g:rehash256 = 1
 
 " airline 
 set laststatus=2
 set ttimeoutlen=50
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-
 
