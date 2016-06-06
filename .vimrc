@@ -18,6 +18,7 @@ Plugin 'tpope/vim-haml'
 Plugin 'tomasr/molokai'
 Plugin 'bling/vim-airline'
 Plugin 'Yggdroot/indentLine'
+Plugin 'gregsexton/matchtag'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
