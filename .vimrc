@@ -74,9 +74,25 @@ let g:airline#extensions#tabline#enabled = 1
 " copy accross terminals
 set clipboard=unnamed
 
-" sass_lint -- need to open at folder with sass-lint.ym;
+" sass_lint -- need to open at folder with sass-lint.yml / lint will appear after save ;
 let g:syntastic_sass_checkers=["sass_lint"]
 let g:syntastic_scss_checkers=["sass_lint"]
+
+
+""  set it up to change the status line based on mode
+set cursorline
+
+" Default Colors for CursorLine
+highlight  CursorLine ctermbg=Blue ctermfg=None
+
+"" Change Color when entering Insert Mode
+autocmd InsertEnter * highlight  CursorLine ctermbg=Black ctermfg=None
+
+"" Revert Color to default when leaving Insert Mode
+autocmd InsertLeave * highlight  CursorLine ctermbg=Blue ctermfg=None
+
+
+
 
 " auto reload
 
