@@ -19,6 +19,8 @@ Plugin 'tomasr/molokai'
 Plugin 'bling/vim-airline'
 Plugin 'Yggdroot/indentLine'
 Plugin 'gregsexton/matchtag'
+Plugin 'scrooloose/syntastic'
+Plugin 'gcorne/vim-sass-lint'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
@@ -71,3 +73,11 @@ let g:airline#extensions#tabline#enabled = 1
 
 " copy accross terminals
 set clipboard=unnamed
+
+" sass_lint -- need to open at folder with sass-lint.ym;
+let g:syntastic_sass_checkers=["sass_lint"]
+let g:syntastic_scss_checkers=["sass_lint"]
+
+" auto reload
+
+" cmd + s to save
