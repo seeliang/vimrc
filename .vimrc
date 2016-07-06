@@ -91,8 +91,8 @@ autocmd InsertEnter * highlight  CursorLine ctermbg=Black ctermfg=None
 "" Revert Color to default when leaving Insert Mode
 autocmd InsertLeave * highlight  CursorLine ctermbg=Blue ctermfg=None
 
-
-
+" backspace
+set backspace=indent,eol,start
 
 " auto reload
 
