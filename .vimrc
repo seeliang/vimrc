@@ -94,6 +94,12 @@ autocmd InsertLeave * highlight  CursorLine ctermbg=Blue ctermfg=None
 " backspace
 set backspace=indent,eol,start
 
+" solarized theme
+syntax enable
+set background=dark
+colorscheme solarized
+
 " auto reload
+
 
 " cmd + s to save
