@@ -21,6 +21,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'gregsexton/matchtag'
 Plugin 'scrooloose/syntastic'
 Plugin 'gcorne/vim-sass-lint'
+Plugin 'mtscout6/syntastic-local-eslint.vim'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
@@ -73,6 +74,9 @@ let g:airline#extensions#tabline#enabled = 1
 
 " copy accross terminals
 set clipboard=unnamed
+
+" eslint 
+let g:syntastic_javascript_checkers = ['eslint']
 
 " sass_lint -- need to open at folder with sass-lint.yml / lint will appear after save ;
 let g:syntastic_sass_checkers=["sass_lint"]
